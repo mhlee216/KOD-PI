@@ -1,0 +1,27 @@
+{
+  "batch_size": 8,
+  "created_at": "2026-11-21T05:17:09.265658+00:00",
+  "detector": {
+    "attack_index": 1,
+    "attack_label": "injection",
+    "id2label": {
+      "0": "benign",
+      "1": "injection"
+    },
+    "key": "piguard",
+    "max_tokens": 512,
+    "model_id": "leolee99/PIGuard",
+    "revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+    "threshold": 0.5,
+    "tokenizer_class": "DebertaV2TokenizerFast",
+    "torch": "2.7.1",
+    "transformers": "4.51.3"
+  },
+  "device": "mps",
+  "failed": 0,
+  "predicted": 3600,
+  "predictions": {
+    "attack": 1306,
+    "benign": 2294
+  }
+}

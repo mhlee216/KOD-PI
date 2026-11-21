@@ -1,0 +1,27 @@
+{
+  "batch_size": 8,
+  "created_at": "2026-11-21T05:17:13.009020+00:00",
+  "detector": {
+    "attack_index": 1,
+    "attack_label": "LABEL_1",
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "key": "prompt-guard-2",
+    "max_tokens": 512,
+    "model_id": "meta-llama/Llama-Prompt-Guard-2-86M",
+    "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+    "threshold": 0.5,
+    "tokenizer_class": "DebertaV2TokenizerFast",
+    "torch": "2.7.1",
+    "transformers": "4.51.3"
+  },
+  "device": "mps",
+  "failed": 0,
+  "predicted": 3600,
+  "predictions": {
+    "attack": 507,
+    "benign": 3093
+  }
+}

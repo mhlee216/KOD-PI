@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-11-21T05:53:44.940236+00:00",
+  "korean_sentence_checks_not_ok": [],
+  "removed_in_review": {
+    "pairs": {
+      "input_removed": 1306
+    },
+    "samples": {
+      "label_conflict": 1,
+      "llm_few_votes": 27,
+      "llm_label_conflict": 56,
+      "representative_removed": 42,
+      "reserve_unused": 64,
+      "review_disagree": 8,
+      "review_hold": 5,
+      "source_incomplete": 264,
+      "source_label_conflict": 397
+    },
+    "sources": [
+      "A003",
+      "A008",
+      "A020",
+      "A023",
+      "A033",
+      "A036",
+      "A038",
+      "A040",
+      "A043",
+      "A045",
+      "A051",
+      "A063",
+      "A068",
+      "A069",
+      "A076",
+      "A078",
+      "A085",
+      "A109",
+      "A121"
+    ]
+  },
+  "samples": 3600,
+  "samples_by_kind_language": {
+    "attack|en": 700,
+    "attack|ko": 2100,
+    "benign|en": 100,
+    "benign|ko": 300,
+    "hard_benign|en": 100,
+    "hard_benign|ko": 300
+  },
+  "samples_by_label": {
+    "attack": 1600,
+    "benign": 2000
+  },
+  "seeds": {
+    "attack": 100,
+    "benign": 100,
+    "hard_benign": 100
+  },
+  "seeds_without_korean": [],
+  "seeds_without_register_variants": [],
+  "sha256": {
+    "kod_pi_benchmark_dataset.csv": "1ed42962e962f2bc6086f3cb5e845e9d19b68535b18645cfcb0f3f8e4a8f9c02"
+  }
+}

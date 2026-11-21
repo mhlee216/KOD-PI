@@ -1,0 +1,3301 @@
+{
+  "bootstrap": 2000,
+  "common_only": true,
+  "common_samples": 3600,
+  "coverage": {
+    "piguard": {
+      "en|attack": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|benign": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|hard_benign": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|processing": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "en|processing_execute": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|attack": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|benign": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|hard_benign": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|processing": {
+        "excluded": 0,
+        "scored": 900,
+        "total": 900
+      },
+      "ko|processing_execute": {
+        "excluded": 0,
+        "scored": 900,
+        "total": 900
+      }
+    },
+    "prompt-guard-2": {
+      "en|attack": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|benign": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|hard_benign": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|processing": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "en|processing_execute": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|attack": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|benign": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|hard_benign": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|processing": {
+        "excluded": 0,
+        "scored": 900,
+        "total": 900
+      },
+      "ko|processing_execute": {
+        "excluded": 0,
+        "scored": 900,
+        "total": 900
+      }
+    },
+    "sentinel-v2": {
+      "en|attack": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|benign": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|hard_benign": {
+        "excluded": 0,
+        "scored": 100,
+        "total": 100
+      },
+      "en|processing": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "en|processing_execute": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|attack": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|benign": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|hard_benign": {
+        "excluded": 0,
+        "scored": 300,
+        "total": 300
+      },
+      "ko|processing": {
+        "excluded": 0,
+        "scored": 900,
+        "total": 900
+      },
+      "ko|processing_execute": {
+        "excluded": 0,
+        "scored": 900,
+        "total": 900
+      }
+    }
+  },
+  "created_at": "2026-11-21T11:36:52.569160+00:00",
+  "dataset": "data",
+  "models": {
+    "piguard": [
+      {
+        "ci95": [
+          0.9133333333333333,
+          0.97
+        ],
+        "conditions": {
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.9433333333333334
+      },
+      {
+        "ci95": [
+          0.2,
+          0.37666666666666665
+        ],
+        "conditions": {
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.29
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.13,
+          0.28
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.2
+      },
+      {
+        "ci95": [
+          0.865,
+          0.97
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 200,
+        "seeds": 100,
+        "value": 0.92
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.01,
+          0.08
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.04
+      },
+      {
+        "ci95": [
+          0.215,
+          0.38
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 200,
+        "seeds": 100,
+        "value": 0.295
+      },
+      {
+        "ci95": [
+          0.9275,
+          0.9775
+        ],
+        "conditions": {
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.955
+      },
+      {
+        "ci95": [
+          0.19747916666666668,
+          0.36752083333333324
+        ],
+        "conditions": {
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 1200,
+        "seeds": 100,
+        "value": 0.2808333333333333
+      },
+      {
+        "ci95": [
+          0.77,
+          0.9102499999999987
+        ],
+        "conditions": {
+          "group": "attack",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.85
+      },
+      {
+        "ci95": [
+          0.97,
+          1.0
+        ],
+        "conditions": {
+          "group": "processing_execute",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.99
+      },
+      {
+        "ci95": [
+          0.23333333333333334,
+          0.4033333333333333
+        ],
+        "conditions": {
+          "group": "attack",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.31666666666666665
+      },
+      {
+        "ci95": [
+          0.18444444444444444,
+          0.35444444444444445
+        ],
+        "conditions": {
+          "group": "processing_execute",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.2688888888888889
+      },
+      {
+        "ci95": [
+          0.9275,
+          0.9775
+        ],
+        "conditions": {
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.955
+      },
+      {
+        "ci95": [
+          0.1874375,
+          0.355
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.2675
+      },
+      {
+        "ci95": [
+          0.2025,
+          0.37
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.285
+      },
+      {
+        "ci95": [
+          0.2099375,
+          0.375
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.29
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.13,
+          0.28
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.2
+      },
+      {
+        "ci95": [
+          0.88,
+          0.9733333333333334
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.93
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.006666666666666667,
+          0.07333333333333333
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.03666666666666667
+      },
+      {
+        "ci95": [
+          0.22327777777777777,
+          0.39666666666666667
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.30666666666666664
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.13,
+          0.28
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.2
+      },
+      {
+        "ci95": [
+          0.88,
+          0.9733333333333334
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.93
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.05
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.02
+      },
+      {
+        "ci95": [
+          0.01,
+          0.08
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.04
+      },
+      {
+        "ci95": [
+          0.01,
+          0.1
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.05
+      },
+      {
+        "ci95": [
+          0.22,
+          0.38674999999999954
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.3
+      },
+      {
+        "ci95": [
+          0.22,
+          0.39674999999999955
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.30666666666666664
+      },
+      {
+        "ci95": [
+          0.22333333333333333,
+          0.4033333333333333
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.31333333333333335
+      },
+      {
+        "ci95": [
+          0.88,
+          0.98
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "explain",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.93
+      },
+      {
+        "ci95": [
+          0.85,
+          0.96
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "quote",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.91
+      },
+      {
+        "ci95": [
+          0.91,
+          0.99
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "translate",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.95
+      },
+      {
+        "ci95": [
+          0.18,
+          0.35
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "explain",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.26
+      },
+      {
+        "ci95": [
+          0.24333333333333335,
+          0.42333333333333334
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "quote",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.33
+      },
+      {
+        "ci95": [
+          0.24,
+          0.42333333333333334
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "translate",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.33
+      },
+      {
+        "ci95": [
+          0.0,
+          0.043333333333333335
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.016666666666666666
+      },
+      {
+        "ci95": [
+          0.0077777777777777776,
+          0.04111111111111111
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_accuracy",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.023333333333333334
+      },
+      {
+        "ci95": [
+          0.7566666666666667,
+          0.9
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_attack",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.8333333333333334
+      },
+      {
+        "ci95": [
+          0.21,
+          0.3778055555555554
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_attack",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.29333333333333333
+      },
+      {
+        "ci95": [
+          0.016666666666666666,
+          0.10008333333333289
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_benign",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.05333333333333334
+      },
+      {
+        "ci95": [
+          0.58,
+          0.7588888888888888
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_benign",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.67
+      },
+      {
+        "ci95": [
+          0.04666666666666667,
+          0.15333333333333332
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_reversed",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.09666666666666666
+      },
+      {
+        "ci95": [
+          0.0044444444444444444,
+          0.025555555555555557
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_reversed",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.013333333333333334
+      },
+      {
+        "ci95": [
+          0.0,
+          0.05
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.02
+      },
+      {
+        "ci95": [
+          0.0,
+          0.05
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.02
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.02,
+          0.09666666666666666
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.056666666666666664
+      },
+      {
+        "ci95": [
+          0.0,
+          0.02666666666666667
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.0,
+          0.01
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0033333333333333335
+      },
+      {
+        "ci95": [
+          0.023250000000000007,
+          0.10333333333333333
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.06
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_accuracy",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.8766666666666667,
+          0.97
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_attack",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.93
+      },
+      {
+        "ci95": [
+          0.18333333333333332,
+          0.35444444444444445
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_attack",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.2688888888888889
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_benign",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.6088611111111112,
+          0.78
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_benign",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.6933333333333334
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_reversed",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.014444444444444444,
+          0.06666666666666667
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_reversed",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.03777777777777778
+      },
+      {
+        "ci95": [
+          0.02,
+          0.11
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.06
+      },
+      {
+        "ci95": [
+          0.03,
+          0.14
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.08
+      },
+      {
+        "ci95": [
+          0.01,
+          0.08
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.04
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      }
+    ],
+    "prompt-guard-2": [
+      {
+        "ci95": [
+          0.22333333333333333,
+          0.3933333333333333
+        ],
+        "conditions": {
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.31
+      },
+      {
+        "ci95": [
+          0.03333333333333333,
+          0.13674999999999954
+        ],
+        "conditions": {
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.08333333333333333
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.22,
+          0.4
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.31
+      },
+      {
+        "ci95": [
+          0.21,
+          0.39
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 200,
+        "seeds": 100,
+        "value": 0.29
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.04,
+          0.16
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.065,
+          0.185
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 200,
+        "seeds": 100,
+        "value": 0.12
+      },
+      {
+        "ci95": [
+          0.2675,
+          0.435
+        ],
+        "conditions": {
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.3475
+      },
+      {
+        "ci95": [
+          0.043333333333333335,
+          0.1475
+        ],
+        "conditions": {
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 1200,
+        "seeds": 100,
+        "value": 0.09
+      },
+      {
+        "ci95": [
+          0.16,
+          0.32
+        ],
+        "conditions": {
+          "group": "attack",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.24
+      },
+      {
+        "ci95": [
+          0.3,
+          0.47333333333333333
+        ],
+        "conditions": {
+          "group": "processing_execute",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.38333333333333336
+      },
+      {
+        "ci95": [
+          0.03991666666666667,
+          0.13666666666666666
+        ],
+        "conditions": {
+          "group": "attack",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.08333333333333333
+      },
+      {
+        "ci95": [
+          0.04111111111111111,
+          0.14777777777777779
+        ],
+        "conditions": {
+          "group": "processing_execute",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.09222222222222222
+      },
+      {
+        "ci95": [
+          0.26,
+          0.4275
+        ],
+        "conditions": {
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.3475
+      },
+      {
+        "ci95": [
+          0.035,
+          0.1325
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.08
+      },
+      {
+        "ci95": [
+          0.04,
+          0.1475
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.0875
+      },
+      {
+        "ci95": [
+          0.0475,
+          0.1575
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.1025
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.22,
+          0.41
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.31
+      },
+      {
+        "ci95": [
+          0.23,
+          0.4066666666666667
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.31666666666666665
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.04,
+          0.16
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.05886111111111111,
+          0.17777777777777778
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.11555555555555555
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.22,
+          0.4
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.31
+      },
+      {
+        "ci95": [
+          0.23333333333333334,
+          0.4034166666666662
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.31666666666666665
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.05,
+          0.17
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.05,
+          0.16
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.05,
+          0.16
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.04666666666666667,
+          0.16
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.06666666666666667,
+          0.18666666666666668
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.12333333333333334
+      },
+      {
+        "ci95": [
+          0.06333333333333334,
+          0.18666666666666668
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.12333333333333334
+      },
+      {
+        "ci95": [
+          0.2,
+          0.38
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "explain",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.29
+      },
+      {
+        "ci95": [
+          0.2,
+          0.38
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "quote",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.29
+      },
+      {
+        "ci95": [
+          0.28,
+          0.46
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "translate",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.37
+      },
+      {
+        "ci95": [
+          0.043333333333333335,
+          0.15333333333333332
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "explain",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.09666666666666666
+      },
+      {
+        "ci95": [
+          0.06333333333333334,
+          0.19
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "quote",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.12333333333333334
+      },
+      {
+        "ci95": [
+          0.06666666666666667,
+          0.19666666666666666
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "translate",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.12666666666666668
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.005555555555555556
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_accuracy",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.0022222222222222222
+      },
+      {
+        "ci95": [
+          0.16,
+          0.33
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_attack",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.24
+      },
+      {
+        "ci95": [
+          0.03666666666666667,
+          0.13444444444444445
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_attack",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.0811111111111111
+      },
+      {
+        "ci95": [
+          0.5933333333333334,
+          0.7734166666666662
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_benign",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.6833333333333333
+      },
+      {
+        "ci95": [
+          0.8177777777777778,
+          0.9377777777777778
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_benign",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.8822222222222222
+      },
+      {
+        "ci95": [
+          0.03333333333333333,
+          0.12333333333333334
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_reversed",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.07666666666666666
+      },
+      {
+        "ci95": [
+          0.013333333333333334,
+          0.06111111111111111
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_reversed",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.034444444444444444
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.016666666666666666
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.006666666666666667
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.04,
+          0.11
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.07333333333333333
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0033333333333333335
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_accuracy",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.0011111111111111111
+      },
+      {
+        "ci95": [
+          0.22,
+          0.4
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_attack",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.31
+      },
+      {
+        "ci95": [
+          0.044444444444444446,
+          0.14777777777777779
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_attack",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.09111111111111111
+      },
+      {
+        "ci95": [
+          0.52,
+          0.6966666666666667
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_benign",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.61
+      },
+      {
+        "ci95": [
+          0.8222222222222222,
+          0.9366944444444443
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_benign",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.8833333333333333
+      },
+      {
+        "ci95": [
+          0.0,
+          0.02
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_reversed",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.006666666666666667
+      },
+      {
+        "ci95": [
+          0.006666666666666667,
+          0.04777777777777778
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_reversed",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.024444444444444446
+      },
+      {
+        "ci95": [
+          0.03,
+          0.13
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.08
+      },
+      {
+        "ci95": [
+          0.01,
+          0.1
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.05
+      },
+      {
+        "ci95": [
+          0.04,
+          0.15
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.09
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.01
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0033333333333333335
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      }
+    ],
+    "sentinel-v2": [
+      {
+        "ci95": [
+          0.84,
+          0.93
+        ],
+        "conditions": {
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.8866666666666667
+      },
+      {
+        "ci95": [
+          0.5366666666666666,
+          0.6966666666666667
+        ],
+        "conditions": {
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.6166666666666667
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.35,
+          0.55
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.45
+      },
+      {
+        "ci95": [
+          0.795,
+          0.9
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 200,
+        "seeds": 100,
+        "value": 0.85
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.34,
+          0.53
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.43
+      },
+      {
+        "ci95": [
+          0.075,
+          0.195
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "scope": "matched"
+        },
+        "metric": "fpr",
+        "n": 200,
+        "seeds": 100,
+        "value": 0.135
+      },
+      {
+        "ci95": [
+          0.8125,
+          0.9075
+        ],
+        "conditions": {
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.8625
+      },
+      {
+        "ci95": [
+          0.4833125,
+          0.6325
+        ],
+        "conditions": {
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 1200,
+        "seeds": 100,
+        "value": 0.5566666666666666
+      },
+      {
+        "ci95": [
+          0.71,
+          0.87
+        ],
+        "conditions": {
+          "group": "attack",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.79
+      },
+      {
+        "ci95": [
+          0.8433333333333334,
+          0.9266666666666666
+        ],
+        "conditions": {
+          "group": "processing_execute",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.8866666666666667
+      },
+      {
+        "ci95": [
+          0.7233333333333334,
+          0.8666666666666667
+        ],
+        "conditions": {
+          "group": "attack",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.7966666666666666
+      },
+      {
+        "ci95": [
+          0.39219444444444446,
+          0.5644444444444444
+        ],
+        "conditions": {
+          "group": "processing_execute",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.4766666666666667
+      },
+      {
+        "ci95": [
+          0.81,
+          0.9075
+        ],
+        "conditions": {
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.8625
+      },
+      {
+        "ci95": [
+          0.49,
+          0.6325
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.5625
+      },
+      {
+        "ci95": [
+          0.4725,
+          0.6275
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.5525
+      },
+      {
+        "ci95": [
+          0.4825,
+          0.63
+        ],
+        "conditions": {
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "tpr",
+        "n": 400,
+        "seeds": 100,
+        "value": 0.555
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.35,
+          0.56
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.45
+      },
+      {
+        "ci95": [
+          0.6733333333333333,
+          0.79
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.73
+      },
+      {
+        "ci95": [
+          0.0,
+          0.01
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0033333333333333335
+      },
+      {
+        "ci95": [
+          0.3333333333333333,
+          0.5233333333333333
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.43
+      },
+      {
+        "ci95": [
+          0.056666666666666664,
+          0.14888888888888888
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.35,
+          0.55
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.45
+      },
+      {
+        "ci95": [
+          0.6733333333333333,
+          0.79
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "en",
+          "register": "none",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.73
+      },
+      {
+        "ci95": [
+          0.0,
+          0.03
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.01
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "group": "benign",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.33,
+          0.52
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.42
+      },
+      {
+        "ci95": [
+          0.33,
+          0.53
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.43
+      },
+      {
+        "ci95": [
+          0.34,
+          0.54
+        ],
+        "conditions": {
+          "group": "hard_benign",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.44
+      },
+      {
+        "ci95": [
+          0.02,
+          0.09
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "hae",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.05333333333333334
+      },
+      {
+        "ci95": [
+          0.06333333333333334,
+          0.1700833333333329
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "haeyo",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.11333333333333333
+      },
+      {
+        "ci95": [
+          0.08325,
+          0.1934166666666662
+        ],
+        "conditions": {
+          "group": "processing",
+          "language": "ko",
+          "register": "hasipsio",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.13333333333333333
+      },
+      {
+        "ci95": [
+          0.64,
+          0.81
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "explain",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.73
+      },
+      {
+        "ci95": [
+          0.93,
+          1.0
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "quote",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.97
+      },
+      {
+        "ci95": [
+          0.4,
+          0.59
+        ],
+        "conditions": {
+          "language": "en",
+          "request": "translate",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.49
+      },
+      {
+        "ci95": [
+          0.05658333333333333,
+          0.1634166666666662
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "explain",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.10666666666666667
+      },
+      {
+        "ci95": [
+          0.08,
+          0.20674999999999955
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "quote",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.14333333333333334
+      },
+      {
+        "ci95": [
+          0.02,
+          0.08666666666666667
+        ],
+        "conditions": {
+          "language": "ko",
+          "request": "translate",
+          "scope": "all"
+        },
+        "metric": "fpr",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.05
+      },
+      {
+        "ci95": [
+          0.09,
+          0.16666666666666666
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.12666666666666668
+      },
+      {
+        "ci95": [
+          0.6211111111111111,
+          0.78
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_accuracy",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.7033333333333334
+      },
+      {
+        "ci95": [
+          0.5866666666666667,
+          0.74
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_attack",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.6633333333333333
+      },
+      {
+        "ci95": [
+          0.04888888888888889,
+          0.14444444444444443
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_attack",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.09333333333333334
+      },
+      {
+        "ci95": [
+          0.08666666666666667,
+          0.20333333333333334
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_benign",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.14333333333333334
+      },
+      {
+        "ci95": [
+          0.12886111111111112,
+          0.2688888888888889
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_both_benign",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.19666666666666666
+      },
+      {
+        "ci95": [
+          0.04,
+          0.09666666666666666
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context"
+        },
+        "metric": "pair_reversed",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.06666666666666667
+      },
+      {
+        "ci95": [
+          0.0,
+          0.016666666666666666
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context"
+        },
+        "metric": "pair_reversed",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.006666666666666667
+      },
+      {
+        "ci95": [
+          0.02,
+          0.12
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.07
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.22,
+          0.4
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "context",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.31
+      },
+      {
+        "ci95": [
+          0.61,
+          0.77
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.6933333333333334
+      },
+      {
+        "ci95": [
+          0.5866666666666667,
+          0.7533333333333333
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.67
+      },
+      {
+        "ci95": [
+          0.67,
+          0.82
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "context",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.7466666666666667
+      },
+      {
+        "ci95": [
+          0.11666666666666667,
+          0.2000833333333329
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.15666666666666668
+      },
+      {
+        "ci95": [
+          0.3011111111111111,
+          0.4489166666666665
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_accuracy",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.37666666666666665
+      },
+      {
+        "ci95": [
+          0.6666666666666666,
+          0.79
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_attack",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.73
+      },
+      {
+        "ci95": [
+          0.056666666666666664,
+          0.14888888888888888
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_attack",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.1
+      },
+      {
+        "ci95": [
+          0.07333333333333333,
+          0.15674999999999956
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_benign",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.11333333333333333
+      },
+      {
+        "ci95": [
+          0.4388611111111111,
+          0.6088888888888889
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_both_benign",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.5233333333333333
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format"
+        },
+        "metric": "pair_reversed",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format"
+        },
+        "metric": "pair_reversed",
+        "n": 900,
+        "seeds": 100,
+        "value": 0.0
+      },
+      {
+        "ci95": [
+          0.08,
+          0.21
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.14
+      },
+      {
+        "ci95": [
+          0.0,
+          0.07
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.03
+      },
+      {
+        "ci95": [
+          0.21,
+          0.39
+        ],
+        "conditions": {
+          "language": "en",
+          "pair_type": "format",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 100,
+        "seeds": 100,
+        "value": 0.3
+      },
+      {
+        "ci95": [
+          0.3433333333333333,
+          0.5234166666666662
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "explain"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.43333333333333335
+      },
+      {
+        "ci95": [
+          0.32,
+          0.48333333333333334
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "quote"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.4
+      },
+      {
+        "ci95": [
+          0.22,
+          0.37666666666666665
+        ],
+        "conditions": {
+          "language": "ko",
+          "pair_type": "format",
+          "request": "translate"
+        },
+        "metric": "pair_accuracy",
+        "n": 300,
+        "seeds": 100,
+        "value": 0.2966666666666667
+      }
+    ]
+  },
+  "samples": 3600,
+  "seed": 20261121
+}

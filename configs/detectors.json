@@ -1,0 +1,37 @@
+{
+  "input_policy": "Inputs are passed verbatim: no truncation, no chat template, no added system text.",
+  "threshold_policy": "Each model card's default threshold (0.5 on the attack-class probability); not tuned on this benchmark.",
+  "models": [
+    {
+      "key": "piguard",
+      "name": "PIGuard",
+      "model_id": "leolee99/PIGuard",
+      "revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+      "attack_label": "injection",
+      "max_tokens": 512,
+      "threshold": 0.5,
+      "trust_remote_code": true
+    },
+    {
+      "key": "prompt-guard-2",
+      "name": "Prompt Guard 2",
+      "model_id": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+      "attack_label": "LABEL_1",
+      "attack_label_source": "LABEL_1 is the malicious class in meta-llama/PurpleLlama LlamaFirewall promptguard_utils.py",
+      "max_tokens": 512,
+      "threshold": 0.5,
+      "trust_remote_code": false
+    },
+    {
+      "key": "sentinel-v2",
+      "name": "Sentinel v2",
+      "model_id": "rogue-security/prompt-injection-jailbreak-sentinel-v2",
+      "revision": "05ff9bfd1f28c5228e53121d5ee4427bb5205212",
+      "attack_label": "jailbreak",
+      "max_tokens": 32768,
+      "threshold": 0.5,
+      "trust_remote_code": false
+    }
+  ]
+}
